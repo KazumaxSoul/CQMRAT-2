@@ -64,72 +64,88 @@ body {
 
 /* Footer */
 
-footer{
-    color: black;
-    text-align: center;
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 33.33%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
     width: 100%;
-    height: 20px;
-    background-color: #008346;
 }
-
-footer .fa {
-    padding: 12px 10px;
-    font-size: 1.5em;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Social Media */
-
-footer .fa-facebook {
-    background-color: #3B5998;
-}
-
-footer .fa-twitter {
-    background-color: #55ACEE;
-    color: white;
-}
-
-footer .fa-instagram {
-    background-color: #E1306C;
-    color: white;
-}
-
-footer .fa-linkedin {
-    background-color: #0A66C2;
-    color: white;
-}
-
-#siteoficial {
-    color: black;
-    padding: 20px;
-}
-
-footer .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
-    margin: 2%;
-}
-
-footer .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
 }
 
 /****************** estilo del video  ************/
@@ -173,17 +189,30 @@ nav {
 
 .container-slider {
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     margin: auto;
     overflow: hidden;
     box-shadow: 0 0 10px #fff, 0 15px 50px;
     position: relative;
 }
 
+.texto-slider {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.texto-slider-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -50%;
+    left: -50%;
+}
+
 .slider {
     display: flex;
-    width: 400%; /* 400% PORQUE SON 4 IMÁGENES */
-    height: 400%;
+    width: 1000%; /* 400% PORQUE SON 4 IMÁGENES */
+    height: 1000%;
     margin-left: -100%;
 }
 
@@ -376,6 +405,10 @@ html{
     display: none;
     overflow: hidden;
 }
+
+/****************** playlist     *******************/
+
+#playlist
 
 /****************** predictions  *******************/
 
@@ -658,18 +691,25 @@ footer a p:hover {
     .grid-4 {
         grid-template-columns: 25% 25% 25% 25%;
     }
+
+    #playlist {
+        height: 605px;
+    }
+
 }
 @media only screen and (max-width: 900px) {
 
 	#gallery img {
 		width: 32.33333333333333%;
 	}
+
 }
 @media only screen and (max-width: 750px) {
 	#gallery img {
 		width: 49%;	
 	}
 }
+
 @media only screen and (max-width: 600px) {
 	#gallery img {
 		width: 98%;	
