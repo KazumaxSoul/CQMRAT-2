@@ -453,6 +453,74 @@ top: -100vh; left: -100vh;
 }
 }
 
+/****************** Flip-cards Section *******************/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#flip-card {
+    padding: 3%;
+    margin: 15px;
+    display: block;
+
+}
+
+.fila-2 {
+    margin-top: 3%;
+}
+
+/* #flip-card {
+    display: block;
+} */
+
+/* Grids */
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+col-5 {
+    height: fit-content;
+}
 /* Gallery */
 
 /* css-tricks */
@@ -714,4 +782,24 @@ footer a p:hover {
 	#gallery img {
 		width: 98%;	
 	}
+}
+
+/* flip-cards (grid) */
+
+@media only screen and (width < 1700px){
+    .grid-5 {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media only screen and (width > 1300px){
+    .grid-5 {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+
+@media only screen and (width > 650px) and (width < 900px) {
+    .grid-5 {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }
