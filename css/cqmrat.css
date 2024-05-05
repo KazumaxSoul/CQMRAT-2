@@ -17,8 +17,14 @@
 }
 
 @font-face {
-    font-family: textonormal;
-    src: url(../font/Vintage\ Browner.ttf);
+    font-family: texto;
+    src: url(../font/CircularSpotifyTxT-Med.ttf);
+}
+
+/* Párrafo */
+
+p{
+    font-family: texto;
 }
 
 * {
@@ -36,10 +42,10 @@
 /* Body */
 
 body {
-    background-color: #008346;
+    background-color: skyblue;
     margin: 0;
     padding: 0;
-    font-family: textonormal;
+    font-family: texto;
 }
 
 /* Tittles */
@@ -62,12 +68,41 @@ body {
     background: linear-gradient(to right, black )
 }
 
+/* Botón */
+
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+    background-position: right top;
+}
+
 /* Footer */
 
 .container-footer{
 	max-width: 1170px;
 	margin:auto;
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -157,13 +192,6 @@ h1{
     font: bolder;
     color: black;
     font-size: 2em;
-}
-
-/* Párrafo */
-
-p{
-    font-family: textonormal;
-
 }
 
 /* Navegación */
@@ -381,29 +409,120 @@ html{
 
 /************* accordion  ****************/
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
+:root {
+    --bg: #fff;
+    --text: #7288a2;
+    --gray: #4d5974;
+    --lightgray: #e5e5e5;
+    --blue: #03b5d2;
+}
+
+.body-accordion {
+    font-family: 'Hind', sans-serif;
+    color: var(--gray);
+}
+
+.container-accordion {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.accordion button[aria-expanded='true'] {
+    border-bottom: 1px solid var(--blue);
+}
+
+.accordion button {
+    position: relative;
+    display: block;
     text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--text);
+    font-size: 1.15rem;
+    font-weight: 400;
     border: none;
+    background: none;
     outline: none;
-    transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: var(--blue);
 }
 
-  /* Style the accordion panel */
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+.accordion .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: var(--blue);
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
     overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
 }
 
 /****************** playlist     *******************/
@@ -425,11 +544,13 @@ html{
     padding: 3em 1em;
 }
 
+/*
 .accordion {
     max-width: 90%;
     margin: auto;
     text-align: left;
 }
+*/
 
 article {
     border: 1px solid #fff;
