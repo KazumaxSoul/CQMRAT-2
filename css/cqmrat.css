@@ -247,8 +247,8 @@ nav {
 
 .slider {
     display: flex;
-    width: 1000%; /* 400% PORQUE SON 4 IMÁGENES */
-    height: 1000%;
+    width: 4300%; /* 400% PORQUE SON 4 IMÁGENES */
+    height: 4300%;
     margin-left: -100%;
 }
 
