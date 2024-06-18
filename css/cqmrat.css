@@ -31,6 +31,10 @@ p{
     box-sizing: border-box;
 }
 
+.mt {
+    margin-top: 5%;
+}
+
 /* paleta de colores */
 
 /*  
@@ -107,17 +111,21 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 ul{
 	list-style: none;
 }
+
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
 }
+
 .footer-col{
-   width: 33.33%;
-   padding: 0 15px;
+    width: 33.33%;
+    padding: 0 15px;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -313,7 +321,7 @@ nav{
 /* Home style */
 
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #03b5d2;
     color: white;
 }
 
@@ -463,6 +471,7 @@ html{
 
 .accordion .accordion-title {
     padding: 1em 1.5em 1em 0;
+    color: white;
 }
 
 .accordion .icon {
@@ -500,6 +509,11 @@ html{
 
 .accordion button[aria-expanded='true'] {
     color: var(--blue);
+}
+
+#accordion-title{
+    color: white;
+    border-bottom: #24262b;
 }
 
 .accordion button[aria-expanded='true'] .icon::after {
@@ -611,7 +625,7 @@ top: -100vh; left: -100vh;
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #03b5d2;
     color: white;
     transform: rotateY(180deg);
 }
@@ -642,6 +656,18 @@ top: -100vh; left: -100vh;
 col-5 {
     height: fit-content;
 }
+
+/* Aclaracion */
+
+.aclaracion {
+    text-align: center;
+}
+
+.container-aclaracion {
+    margin: 100px;
+}
+
+
 /* Gallery */
 
 /* css-tricks */
@@ -724,7 +750,7 @@ footer a p:hover {
 
   /* Modal Content/Box */
 .modal-content {
-    background-color: #008346;
+    background-color: #03b5d2 !important;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -749,6 +775,12 @@ footer a p:hover {
 
 #myBtn {
     cursor: pointer;
+    color: white;
+}
+
+#myBtn ul {
+    margin: 0;
+    padding: 0;
 }
 
 .modal-content {

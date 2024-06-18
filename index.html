@@ -21,12 +21,13 @@
 		<!--  Navegación -->
 		<nav>
             <div class="topnav" id="myTopnav">
-				<a href="#" class="active">Home</a>
+				<a href="#" class="active">Inicio</a>
 				<a href="#intro">Dedicatoria</a>
-				<a href="#moments">Momentos</a>
+				<a href="#flip-card">Canciones</a>
+				<a href="#canciones">Slider</a>
+				<a href="#momentos">Momentos</a>
 				<a href="#video">Video</a>
-				<a href="#coachingstaff">Coaching Staff</a>
-				<a href="#gallery">Gallery</a>
+				<a href="#gallery">Fotos</a>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 					<i class="fa fa-bars"></i>
 				</a>
@@ -35,7 +36,7 @@
 
 		<!--  Sección "Hero" -->
 		<section id="hero">
-            <a src="./img/hero_1.jpg"><button class="btn-donate">:D</button></a>
+            <a src="./img/hero_1.jpg"><button class="btn-donate"><3</button></a>
 		</section>
 		
 		<!--  Sección "Introducción" -->
@@ -43,61 +44,60 @@
 
 			<div class="grid-2">
 				<div class="col-2">
-					<h1 class="titleintro">Introduction</h1>
+						
 
-					<!-- Accordion -->
+						<!-- Accordion -->
+						<section class="container-accordion body-accordion">
+							<h2 id="accordion-title">Cosas que amo de ti</h2>
+							<div class="accordion">
 
-					<section class="container-accordion body-accordion">
-						<h2>Alma</h2>
-						<div class="accordion">
+								<!-- Item 1 -->
+								<div class="accordion-item">
+									<button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Personalidad</span><span class="icon" aria-hidden="true"></span></button>
 
-							<!-- Item 1 -->
-							<div class="accordion-item">
-								<button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="accordion-content">
+										<p>En 2019 lo primero que impactó en mí fue tu personalidad, coincidiamos en gustos y en practicamente todo. Me encanta esa forma tuya de ser tan bonita, tus bromas, tu forma de expresarte (chiqui), tu forma de exagerar las cosas, tu forma de gesticular, poner caras...</p>
+									</div>
 
-								<div class="accordion-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
 								</div>
 
-							</div>
+								<!-- Item 2 -->
+								<div class="accordion-item">
+									<button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Estilo</span><span class="icon" aria-hidden="true"></span></button>
 
-							<!-- Item 2 -->
-							<div class="accordion-item">
-								<button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="accordion-content">
+										<p>Si algo te hace única y distinta es tu estilo cariño, tu forma de vestir, de lllevar ropa que te hace brillar más que a nadie. Me encanta que te a la hora de irnos a dormir juntos te pongas tu pijamita chiqui, y que te pongas tus cargo o tus vestidos, tus pendientes o tus anillos,o tus tops y abrigos.</p>
+									</div>
+								</div>
 
-								<div class="accordion-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+								<!-- Item 3 -->
+								<div class="accordion-item">
+									<button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Ser</span><span class="icon" aria-hidden="true"></span></button>
+
+									<div class="accordion-content">
+										<p>Amo tu ser, tu alma, tu esencia.</p>
+									</div>
+								</div>
+
+								<!-- Item 4 -->
+								<div class="accordion-item">
+									<button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Amor</span><span class="icon" aria-hidden="true"></span></button>
+
+									<div class="accordion-content">
+										<p>Estoy completamente enamorado de la manera en la que expresas tu amor hacia a mí, lo haces de tantas formas como puede ser haciendo regalos tan bonitos y con tanto trabajo detrás, como estando conmigo siempre que lo he necesitado. También lo expresas siendo chiqui >:( casi todos los días.</p>
+									</div>
+								</div>
+
+								<!-- Item 5 -->
+								<div class="accordion-item">
+									<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Gustos</span><span class="icon" aria-hidden="true"></span></button>
+
+									<div class="accordion-content">
+										<p>Mi amor algo que me encanta un montón de ti son tus gustos, lo he mencionado anteriormente pero hace falta que lo vuelva a mencionar, tus gustos me parecen tan brillantes y especiales para mí que me encantan. Me encanta tu gusto musical, películas, videjuegos...</p>
+									</div>
 								</div>
 							</div>
-
-							<!-- Item 3 -->
-							<div class="accordion-item">
-								<button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
-
-								<div class="accordion-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-								</div>
-							</div>
-
-							<!-- Item 4 -->
-							<div class="accordion-item">
-								<button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
-
-								<div class="accordion-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-								</div>
-							</div>
-
-							<!-- Item 5 -->
-							<div class="accordion-item">
-								<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
-
-								<div class="accordion-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-								</div>
-							</div>
-						</div>
-					</section>
+						</section>
 				</div>
 				<div class="col-2">
 					<h1 class="introimgtitle"> Canciones que me recuerdan a ti <3 </h1>
@@ -106,9 +106,302 @@
 			</div>
 		</section>
 
-		<!-- SLIDER -->
+		<!-- Canciones -->
+		<section id="flip-card">
+			<h1 class="introimgtitle">Canciones que me recuerdan a ti</h1>
+				<!-- Primera fila -->
+				<div class="grid-5">
+					
+					<!-- Card 1 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/slider_4.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>BABI BOI</h1>
+									<p>Baby boy, you stay on my mind</p>
+									<p>I think about you all the time</p>
+									<p>Parecen Las Bratz ella y sus besties</p>
+									<p>Pero si estoy contigo siento que todo está bien</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 2 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/ferxxo_edition.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Ferxxo Edition</h1>
+									<p>Contigo la paso tan cabrón</p>
+									<p>Qué chimba que después de tanto</p>
+									<p>La vuelta al fin se nos dio</p>
+									<p>¿Quién dijo que no?, si esto nadie lo forzó</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 3 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/reputation.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Reputation</h1>
+									<p>Take my own life just to save yours</p>
+									<won>I know I fucked up before, but I won't do it again</p>
+									<p>And I got a lot of things that I wish I would've said</p>
+									<p>And I'm the same fool, and I'm wearing that hat again</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 4 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/un_verano_sin_ti.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Un Verano Sin Ti</h1>
+									<p>Si fui quien falló</p>
+									<p>Sorry por ser yo, ey</p>
+									<p>Y no ser el hombre que te merecías</p>
+									<p>Yo quizá madure pero en otra vida</p>
+									<p>Y ahora toca un verano sin ti</p>
+									<No>La 'toy pasando bien no te voy a mentir</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 5 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/cuando_tu_me_miras.jpeg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Cuando tu me miras</h1>
+									<p>Cuando tu me miras</p>
+									<p>Mi corazón palpita</p>
+									<p>No puedo parar en ver tu linda carita</p>
+									<p>Tus ojos hermosos brillan tal como perlas</p>
+									<p>No soy el más perfecto</p>
+									<p>Pero por ti daré el cien y más</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Segunda fila -->
+				<div class="grid-5 fila-2">
+					
+					<!-- Card 6 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/tear_in_my_hearth.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Tear in My Heart</h1>
+									<p>She's the tear in my heart</p>
+									<p>I'm alive</p>
+									<p>She's the tear in my heart</p>
+									<p>I'm alive</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 7 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/sonrisa.png" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Sonrisa</h1>
+									<p>Cuando nos levantamo'</p>
+									<p>Tú tenía' la misma sonrisa que tenías antes de acostarte</p>
+									<p>Ta cabrón que te puedo sentir sin ni tocarte, yeah</p>
+									<p>Si está' en crisis (crisis), llama</p>
+									<p>Llego si no estoy busy, hey</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 8 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/la_mejor_de_todas.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>La Mejor de Todas</h1>
+									<p>Eres todo lo que anhelo, eres el regalo que bajó del cielo</p>
+									<p>Quiero estar siempre a tu lado, hasta tus defectos me han enamorado</p>
+									<p>La protagonista de mi nueva historia</p>
+									<p>La que es buen amante si estamos a solas</p>
+									<p>La que ya es feliz y siempre está presente</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 9 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/deja_vu.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Deja Vu</h1>
+									<p>Tell me is that deja vu? (Ooh-ooh)</p>
+									<p>'Cause you want me and I want you (ooh-ooh)</p>
+									<p>Tell me is that deja vu? (Ooh-ooh)</p>
+									<p>'Cause baby, it ain't nothing new, no</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 10 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/life's_a_mess.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Life's A Mess</h1>
+									<p>Uh, sometimes life's a mess</p>
+									<p>I remember when me and love ain't click</p>
+									<p>Looking for somethin' real then I found it</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Tercera fila -->
+				<div class="grid-5 fila-2">
+					
+					<!-- Card 11 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/R.I.P.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>R.I.P</h1>
+									<p>R.I.P., I would die for you</p>
+									<p>I would die for you</p>
+									<p>I would die for you</p>
+									<p>I would die for you</p>
+									<p>I would die for you, ayy</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 12 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/ferxxo_edition.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>VELOCIDAD DE CRUCERO</h1>
+									<p>Yo sé que el día no ha sali'o bien</p>
+									<p>Pero vo'a hacer que se te olvide, mi reina</p>
+									<p>Mi baby se ve fina, nunca se ve putona</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 13 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/wrapped_around_your_finger.png" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Wrapped Around Your Finger</h1>
+									<p>You keep me wrapped around your finger</p>
+									<p>Wrapped around your finger</p>
+									<p>I was caught up in your orbit</p>
+									<p>Spinnin' like a bullet</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 14 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/texas_tea.png" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Texas Tea</h1>
+									<p>🖕🖕🖕🖕🖕🖕🖕🖕</p>
+									<p>🖕🖕🖕🖕🖕🖕🖕🖕</p>
+									<p>🖕🖕🖕🖕🖕🖕🖕🖕</p>
+									<p>🖕🖕🖕🖕🖕🖕🖕🖕</p>
+									<p>🖕🖕🖕🖕🖕🖕🖕🖕</p>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Card 15 -->
+					<div class="col-5">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/sanctuary.jpg" alt="Avatar" style="width:300px;height:300px;">
+								</div>
+									<div class="flip-card-back">
+									<h1>Sanctuary</h1>
+									<p>If you've been waiting for fallin' in love</p>
+									<p>Babe, you don't have to wait on me</p>
+									<p>'Cause I've been aiming for heaven above</p>
+									<p>But an angel ain't what I need</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+
+			<!-- SLIDER -->
 		<section id="canciones">
-			<h1 class="introimgtitle">Hola</h1>
+			<h1 class="introimgtitle">Canciones que me suenan a ti</h1>
 
 			<div class="container-slider">
 
@@ -129,14 +422,14 @@
 
 					<!-- Slider 3 -->
 					<div class="slider__section">
-						<p class="texto-slider">FERXXO EDITION (3)</p>
-						<img src="img/slider_3.jpg" alt="" class="slider__img">
+						<p class="texto-slider">Fabiola (3)</p>
+						<img src="img/slider_4.jpg" alt="" class="slider__img">
 					</div>
 
 					<!-- Slider 4 -->
 					<div class="slider__section">
-						<p class="texto-slider">Fabiola (4)</p>
-						<img src="img/slider_4.jpg" alt="" class="slider__img">
+						<p class="texto-slider">PRIVILEGIOS (4)</p>
+						<img src="img/ferxxo_edition.jpg" alt="" class="slider__img">
 					</div>
 
 					<!-- Slider 5 -->
@@ -153,26 +446,26 @@
 
 					<!-- Slider 7 -->
 					<div class="slider__section">
-						<p class="texto-slider">Reputation (7)</p>
-						<img src="img/slider_7.jpg" alt="" class="slider__img">
+						<p class="texto-slider">Hola Como Vas (7)</p>
+						<img src="img/card_2.jpg" alt="" class="slider__img">
 					</div>
 
 					<!-- Slider 8 -->
 					<div class="slider__section">
-						<p class="texto-slider">Deja vu (8)</p>
-						<img src="img/slider_8.jpg" alt="" class="slider__img">
+						<p class="texto-slider">3 Am (8)</p>
+						<img src="img/card_3.jpg" alt="" class="slider__img">
 					</div>
 
 					<!-- Slider 9 -->
 					<div class="slider__section">
-						<p class="texto-slider">Wrapped Around your Finger (9)</p>
-						<img src="img/slider_7.jpg" alt="" class="slider__img">
+						<p class="texto-slider">Enjoy Yourself (9)</p>
+						<img src="img/card_4.jpg" alt="" class="slider__img">
 					</div>
 
 					<!-- Slider 10 -->
 					<div class="slider__section">
-						<p class="texto-slider">Life's A Mess II (10)</p>
-						<img src="img/slider_10.jpg" alt="" class="slider__img">
+						<p class="texto-slider">Niña Bonita (10)</p>
+						<img src="img/card_6.jpg" alt="" class="slider__img">
 					</div>
 				</div>
 
@@ -183,296 +476,82 @@
 
 		</section>
 
-		<section id="flip-card">
-			<h1 class="introimgtitle">flip-card</h1>
-				<!-- Primera fila -->
-				<div class="grid-5">
-					
-					<!-- Card 1 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/slider_4.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 2 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_2.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 3 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_3.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 4 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_4.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 5 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_3.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Segunda fila -->
-				<div class="grid-5 fila-2">
-					
-					<!-- Card 6 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_6.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 7 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_7.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 8 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_8.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 9 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_9.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 10 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/slider_5.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<!-- Tercera fila -->
-				<div class="grid-5 fila-2">
-					
-					<!-- Card 11 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_11.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 12 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_12.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 13 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_12.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 14 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/slider_3.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-	
-					<!-- Card 15 -->
-					<div class="col-5">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/card_15.jpg" alt="Avatar" style="width:300px;height:300px;">
-								</div>
-									<div class="flip-card-back">
-									<h1>John Doe</h1>
-									<p>Architect & Engineer</p>
-									<p>We love that guy</p>
-									</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</section>
 
-		<section id="moments">
-			<h1 class="titles">Trophies</h1>
-			<div class="grid-4">
+		<section id="momentos">
+			<h1 class="titles" style="text-align: center;">Momentos</h1>
+			<div class="grid-4 contenedor-img">
 				<div class="col-4">
 					<div class="card">
-						<img id="trophie1" src="./img/trophie1.png" alt="texto de ejemplo">
-						<h3>1957 NBA Champions</h3>
-						<p>The 1957 NBA World Championship Series was the championship series of the 1956-57 National Basketball Association season, and was the conclusion of the 1957 NBA Playoffs. The best-of-seven series was played between the Western Division champion St.</p>
+						<img id="trophie1" src="./img/graduacion.jpg" alt="texto de ejemplo">
+						<h3>27 de mayo 2023</h3>
+						<p>Alma creo que este día fue tan bonito para los dos, nuestro reencuentro que inicio todo otra vez, fue una noche mágica y conectamos de una manera tan especial.</p>
 					</div>
 				</div>
 
 				<div class="col-4">
 					<div class="card">
-						<img src="./img/trophie2.png" alt="">
-						<h3>2021-2022 NBA Eastern Conference Champions</h3>
-						<p>The Celtics were one of the most entertaining franchises during the 2021-22 season. The Celtics won the division and the Eastern Conference championship en route to another NBA Finals appearance.</p>
+						<img src="./img/mr_noodles-removebg-preview.png" alt="">
+						<h3>18 de junio 2023</h3>
+						<p>El día que te pedí salir, fue tan romántico todo, nuestra cena de mierda en el Mr Noodles con mi burrito pestoso aunque nos echamos unas risas increíbles. Y luego cuando fuimos a la playa a estar juntos tumbados mirando a las estrellas. Fue maravillosos.</p>
 					</div>
 				</div>
 
 				<div class="col-4">
 					<div class="card">
-						<img src="./img/trophie3.png" alt="">
-						<h3>1981 NBA Champions</h3>
-						<p>Spalding NBA Official Champions basketball. Hand-signed by members of the 1981 NBA Champions Boston Celtics, with Larry Bird, Robert Parish, Gerald Henderson, Cedric Maxwell, and Rick Robey.</p>
+						<img src="./img/triana.jpg" alt="">
+						<h3>15-18 de septiembre 2023</h3>
+						<p>El primer fin de semana que eché en Sevilla, fueron unas vacaciones increíbles, fuimos a un montón de sitios y comimos en todos lados. Fue tan bonito todo </p>
 					</div>
 				</div>
 
 				<div class="col-4">
 					<div class="card">
-						<img src="./img/trophie4.png" alt="">
-						<h3>2008 NBA Champions</h3>
-						<p>Led by Paul Pierce, Kevin Garnett, and Ray Allen, and holding home court advantage, the Celtics defeated the Lakers, led by Pau Gasol and MVP Kobe Bryant, in six games. It was their first title in twenty-two years and their 17th title overall.</p>
+						<img src="./img/ramen_sevilla.jpg" alt="">
+						<h3>30 de abril 2024</h3>
+						<p>Estuve contigo en Sevilla y fuimos a cenar al japonés, me lo pasé estupendamente, contigo en Sevilla para mí eran como mis vacaciones temporales y todos mis problemas se solucionaban</p>
 					</div>
 				</div>
+
+				<div class="col-4">
+					<div class="card">
+						<img id="coach1" src="./img/cumpleaños.jpg" alt="">
+						<h3>7 de octubre 2023</h3>
+						<p>Este fue el cumpleaños de Alba, me lo pasé genial con todo el mundo y en concreto contigo, nos hicimos unas fotos preciosas y que menos, porque estabas preciosa.</p>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card">
+						<img src="./img/soul.jpg" alt="">
+						<h3>28 de octubre 2023</h3>
+						<p>Aquí fue tu cumpleaños, mi madre, hermana, hermano, todos te hicieron un regalo de cumpleaños y me pareció precioso. Me lo pasé super bien ese día y además hiciste fotos preciosas con la cámara.</p>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card">
+						<img src="./img/parcela.JPEG" alt="">
+						<h3>25 de noviembre 2023</h3>
+						<p>Cuando viniste a la parcela del abuelo Paco, fue un día muy especial para mí porque fue como reforzar nuestra relación con mi familia. Te hicimos un parcela tour y te enseñamos todo, luego me dijiste dormida que le dijiste a tus padres que teníamos mucha fruta plantada :)</p>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card">
+						<img src="./img/plaza_españa.jpg" alt="">
+						<h3>24 de febrero 2024</h3>
+						<p>El día que estuvimos con Claudia y Manuel juntos dando un paseo por toda Sevilla, pasando por plaza de España y yendo al acuario. Todavía tengo la moneda de cobre de recuerdo en mi cartera mi amor.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="aclaracion">
+			<div class="container-aclaracion">
+				<h2>Aclaración</h2>
+				He puesto tan solo 8 días, pero este año entero juntos ha estado lleno de momentos preciosos, como las demás veces que me quedé en Sevilla a dormir, mi cumpleaños, San Juan, San Valentín, cuando hemos ido a cenar por ahí en Marbella, cuando te quedaste a dormir en Málaga... me podría tirar así todo el día (estoy enamorado de ti).
+				Sin duda este año contigo ha sido un año lleno de momentos preciosos y ojalá así sigan :)
 			</div>
 		</section>
 
@@ -480,76 +559,45 @@
 		<section id = "video">
 			<div class ="col-2">
 				<div class ="card">
-				<h1>Video Presentation</h1>
-				<p>Boston Celtics 2022-2023 Intro Video</p>
+				<h1 style="text-align: center;">Video</h1>
+				<p>Video recopilatorio de fotitos con mi amor</p>
 					<div class="container">
 						<div class="video-responsive">
-						<iframe src="https://www.youtube.com/embed/YcF_SS_KSag?si=1OkT_eKzGCCUsMxA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+							<iframe src="https://www.youtube.com/embed/GB9sKJWlHpk?si=rQO3w8oz-UiCD3FP" rel=1 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<!--  Sección "Coaching Staff" -->
-		<section id ="coachingstaff">
-			<h1>Coaching Staff</h1>
-
-			<div class="grid-4">
-
-				<div class="col-4">
-					<div class="card">
-						<img id="coach1" src="./img/coach1.png" alt="">
-						<h3>Head Coach</h3>
-						<p>Joe Mazzulla </p>
-					</div>
-				</div>
-
-				<div class="col-4">
-					<div class="card">
-						<img src="./img/coach2.png" alt="">
-						<h3>Assistant Coach</h3>
-						<p>Charles Lee</p>
-					</div>
-				</div>
-
-				<div class="col-4">
-					<div class="card">
-						<img src="./img/coach3.png" alt="">
-						<h3>Enhancement Coach</h3>
-						<p>Craig Luschenat</p>
-					</div>
-				</div>
-
-				<div class="col-4">
-					<div class="card">
-						<img src="./img/coach4.png" alt="">
-						<h3>Senior Consultant</h3>
-						<p>Jeff Van Gundy</p>
-					</div>
-				</div>
-			</p>
 		</section>
     
 		<!--  Sección "Gallery" -->
 		<section id="gallery">
 			<h1>Fotitos</h1>
 			<div class="imgcontainer">
-			<img src="./img/gallery_1.jpg">
+				<img src="./img/gallery_1.jpg">
+				
+				<img src="./img/gallery_2.jpg">
+				
+				<img src="./img/gallery_3.jpg">
+				
+				<img src="./img/gallery_4.jpg">
+				
+				<img src="./img/gallery_5.jpg">
+				
+				<img src="./img/gallery_6.jpg">
+				
+				<img src="./img/gallery_7.jpg">
+				
+				<img src="./img/gallery_8.jpg">
+
+				<img src="./img/DSC03803.JPEG">
+
+				<img src="./img/IMG_5736.JPEG">
+
+				<img src="./img/IMG_5914.JPEG">
+
+				<img src="./img/IMG_6011.JPEG">
 			
-			<img src="./img/gallery_2.jpg">
-			
-			<img src="./img/gallery_3.jpg">
-			
-			<img src="./img/gallery_4.jpg">
-			
-			<img src="./img/gallery_5.jpg">
-			
-			<img src="./img/gallery_6.jpg">
-			
-			<img src="./img/gallery_7.jpg">
-			
-			<img src="./img/gallery_8.jpg">
 			</div>
 
 		</section>
@@ -562,8 +610,8 @@
 					<!-- Primera columna-->
 					<div class="footer-col">
 						<h4>Créditos</h4>
-						<ul>
-							<il><h3 id="myBtn"> Creditos</h3></il>
+						<ul style="padding-left: 0;">
+							<il><h3 id="myBtn">Créditos</h3></il>
 						</ul>
 							<!-- The Modal -->
 						<div id="myModal" class="modal">
@@ -571,12 +619,14 @@
 							<!-- Modal content -->
 							<div class="modal-content">
 								<span class="close">&times;</span>
-								<p><strong>Contenido y Diseño:</strong><br>Sergio Ramos Alarcón</p>
-								<p><strong>Fotografías e Imágenes:</strong><br>Propiedad de la NBA. Todos los derechos reservados.</p>
-								<p><strong>Datos Estadísticos:</strong><br>Proporcionados por NBA Stats.</p>
-								<p><strong>Recursos Gráficos:</strong><br>Iconos y gráficos de IconFinder.</p>
-								<p><strong>Fuentes Tipográficas:</strong><br>Fuentes utilizadas: Vintage, Nova-Bold.</p>
-								<p><strong>Agradecimientos Especiales:</strong><br>Agradecemos a la NBA por su colaboración.</p>
+
+									<h3>Llevo mucho tiempo haciendo este proyecto mi amor, al principio tenía dudas y no sabía realmente como hacerte un regalo tan especial. Al principio traté de plagiarte y hacer una libreta con todas las canciones que me recordaban a ti, pero no era lo mío, me puse bastante triste y no pude regalarte en tu cumpleños. Pasaron los meses y no encontraba la forma en la que regalarte algo tan especial como una playlist que me recuerdete a ti.</h3>
+
+									<h3 class="mt">Hasta que un día a las 1 de la mañana, me vino una inspiración y di con la clave, iba a hacerte una página web por nuestro aniversario y te iba a dedicar la playlist y mucho más. Espero muchísimo que te haya gustado y que cuando estés triste y desanimada te metas a este enlace a recordar bonitos momentos juntos</h3>
+
+									<h3 class="mt">Han sido muchos meses de esfuerzo y de escribir mucho en este teclado, además de que se me han complicado mucho las cosas obviamente a la hora de subirlo a Internet y demás. Ha sido mi regalo más ambicioso hasta la fecha y espero que lo aprecies.</p>
+
+									<h3 class="mt">Te adoro mucho cariño y feliz aniversario, te amo amor de mi vida</h3>
 							</div>
 	
 							</div>
@@ -585,7 +635,7 @@
 
 					<div class="footer-col">
 						<h4>Home</h4>
-						<ul>
+						<ul style="padding-left: 0;">
 							<li><a href="#">Inicio</a></li>
 							<li><a href="#intro">Playlist</a></li>
 							<li><a href="#canciones">Canciones</a></li>
